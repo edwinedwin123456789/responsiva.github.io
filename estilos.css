@@ -1,0 +1,391 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+nav{
+    background: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: white;
+    
+}
+.logo{
+    color: white;
+    font-size:0.5rem;
+    font-weight: bold;
+    width: 55px;
+}
+.link{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+.links{
+    
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a:hover{
+    color: #4CAF50;
+    background: rgba(255,255,255,0.1);  
+}
+
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.menu a{
+    color: beige;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 1.5rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .logo{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .link {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .link li{
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .link a{
+        display: block;
+        padding: 1rem;
+        background: rgba(255,255,255,0.1);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: all 0.3s ease;
+    }
+
+    .link a:hover {
+        background: rgba(255,255,255,0.2);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+}
+
+.imagen_principal{
+    padding: 2rem;
+    min-height: 100vh;
+    
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+.imagen_principal{
+    position:relative;
+    background-image: linear-gradient(90deg, #00000069, #00000069),
+    url(Imagenes/30105-la_tecnologia_de_la_informacion-dedo-mano-brazo-informacion-3800x2533.jpg);
+    
+    object-fit: cover;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-align: center;
+    width: 40vw;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.titulo_pagina{
+    font-size: 30px;
+    font-family: verdana;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.galeria{
+   display:flex;
+    
+    justify-content: space-around;
+    text-align: center;
+    animation: desplazando;
+    animation-timeline: view();
+}
+
+.titulo_galeria{
+    text-align: center;
+
+}
+.subtitulo_galeria{
+    text-align: center;
+}
+
+.seccion_galeria{
+    background: #0b253f;
+    padding: 4rem 0;
+    
+    color: white;
+     
+}
+@media (max-width: 768px) {
+    .titulo_galeria{
+        font-size: 2rem;
+    }
+    
+    .galeria{
+        gap: 1rem;
+    }
+    
+    .tarjetas{
+        width: 300px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo_galeria{
+        font-size: 1.8rem;
+    }
+    
+    .subtitulo_galeria{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .galeria{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .tarjetas{
+        width: 100%;
+        max-width: 350px;
+        height: 200px;
+    }
+}
+
+
+aside{
+
+}
+.tarjetas{
+    height: 60vh;
+    width:40vh;
+    background-color: brown;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+.tarjetas img{
+    height: 80%;
+    width: 100%;
+}
+.tarjeta1{
+    height: 40vh;
+    width:25vw;
+    background-color: brown;
+}
+.tarjeta1 img{
+    
+}
+.tarjeta2{
+    height: 40vh;
+    width:25vh;
+    background-color: rgb(167, 219, 23);
+}
+.tarjeta3{
+    height: 40vh;
+    width:25vh;
+    background-color: rgb(42, 165, 159);
+}
+
+.demo-content {
+    flex: 1;
+    padding: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.demo-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Footer Desktop */
+.footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 3rem 0 1rem;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-title {
+    font-size: 1.8rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 0.5rem;
+}
+
+.footer-description {
+    color: #bdc3c7;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.footer-contact p {
+    margin-bottom: 0.5rem;
+    color: #bdc3c7;
+}
+
+.footer-social {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    color: #bdc3c7;
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: #3498db;
+    border-color: #3498db;
+    background: rgba(52, 152, 219, 0.1);
+}
+
+.footer-bottom {
+    border-top: 1px solid #34495e;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: #95a5a6;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    .footer-section {
+        flex: 1 1 45%;
+        min-width: 200px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 1.5rem 0 1rem;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-title {
+        font-size: 1.5rem;
+    }
+    
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+    
+    .footer-social {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .social-link {
+        font-size: 0.9rem;
+    }
+    
+}
